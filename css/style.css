@@ -34,6 +34,7 @@ nav a:hover, nav a:focus {
 nav {
     display: flex;
     justify-content: center;
+    border: #a3927b double 5px;
 }
 
 nav ul{
@@ -50,8 +51,7 @@ nav li {
     background-color: #F3FBEF;
     border-radius: 7px;
     border: 2px solid #4D543B;
-    margin: 3px;
-    box-shadow: 2px 2px 5px #4D543B, inset 0px 0px 7px rgba(0, 0, 0, 0.3);    
+    margin: 3px;   
 }
 
 nav a {
@@ -78,7 +78,7 @@ nav li.active a{
     grid-template-rows: 400px;
 }
 
-.column#museum, .column#books {
+.column#the1930, .column#drive {
     display: none;
 }
 
@@ -121,7 +121,7 @@ nav li.active a{
 
 .summary p {
     font-size: 21px;
-    font-family: 'Tiro Tamil';
+    font-family: 'Times New Roman', Times, serif;
     border-radius: 30px;
     margin-top: 0px;
     padding: 15px;
@@ -165,7 +165,7 @@ header h2 {
 }
 
 h2 {
-    font-family: 'Tiro Tamil';
+    font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     margin: 10px 0px;
     font-size: 25px;
@@ -205,7 +205,6 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-radius: 20px;
     box-shadow: 10px 10px 20px rgb(0 0 0 / 40%), inset 0px 0px 25px rgb(0 0 0 / 30%);
     position: absolute;
     width: 250px;
@@ -217,7 +216,7 @@ p {
 }
 
 .cards:hover:not(.active).right, .cards:focus:not(.active).right {
-    transform: translateX(45%) rotate(3deg) scale(0.9);
+    transform: translateX(45%) scale(0.9);
 }
 
 .cards.active:hover, .cards.active:focus {
@@ -330,7 +329,7 @@ footer p{
         grid-template-rows: 400px;
     }
 
-    .column#books {
+    .column#drive {
         display: inherit;
     }
 
@@ -351,59 +350,7 @@ footer p{
         justify-items: center;
     }
     
-    .avatar {
-        grid-row: 1/span 2;
-    }
-
-    .conjuring {
-        grid-row: 2/span 2;
-        grid-column: 2/3;
-        margin-top: 0px;
-    }
-
-    .encyclopedia {
-        grid-row: 3/span 2;
-        grid-column: 1/2;
-    }
-
-    .frozen {
-        grid-row: 4/span 2;
-        grid-column: 2/3;
-        margin-top: 0px;
-    }
-
-    .kingdom {
-        grid-row: 5/span 2;
-        grid-column: 1/2;
-    }
-
-    .percyjackson {
-        grid-row: 6 /span 2;
-        grid-column: 2/3;
-        margin-top: 0px;
-    }
-
-    .rainbow {
-        grid-row: 7 /span 2;
-        grid-column: 1/2;
-    }
-
-    .series {
-        grid-row: 8 /span 2;
-        grid-column: 2/3;
-        margin-top: 0px;
-    }
-
-    .suite {
-        grid-row: 9 /span 2;
-        grid-column: 1/2;
-    }
-
-    .ultron {
-        grid-row: 10/ span 2;
-        grid-column: 2/3;
-        margin-top: 0px;
-    }
+    
 }
 
 @media screen and (prefers-reduced-motion: reduce) and (min-width:800px) {
@@ -453,7 +400,7 @@ footer p{
         column-gap: 20px;
     }
 
-    .column#museum {
+    .column#the1930 {
         display: inherit;
     }
 
@@ -493,11 +440,6 @@ footer p{
 
     div.grid .cards {
         height: auto;
-    }
-
-    div.grid .conjuring, div.grid .frozen, div.grid .percyjackson, div.grid .series, div.grid .ultron {
-        margin-bottom: 0px;
-        margin-top: 60px;
     }
 
     div.grid .card_container {
